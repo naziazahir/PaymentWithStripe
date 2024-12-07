@@ -2,7 +2,9 @@
 
 require __DIR__ . "/vendor/autoload.php";
 
-$stripe_secret_key = "sk_test_51QTID0DkLr7pUtUcIZt4qFaVsdw7x4cj6F64QzTnbdNqD7NQKHCVP07nqtit0bajrHs9M1vtsB37LfFD8Z913mgu00DZfHlxIn";
+// copy secret api key from your stripe account and paste it below. 
+
+$stripe_secret_key = "paste secret-api-key here";
 \Stripe\Stripe::setApiKey($stripe_secret_key);
 
 $checkout_session = \Stripe\Checkout\Session::create([
